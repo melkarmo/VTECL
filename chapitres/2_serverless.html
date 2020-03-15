@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>#VTECL - Cloud Computing</title>
+        <meta name="description" content="Synthèse VTECL">
+        <meta name="author" content="melkarmo">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .masthead { 
+                height: 30vh; 
+                background-size: cover;
+                background-position: center; 
+                background-repeat: no-repeat; 
+            }
+            .back-to-top {
+                position: fixed;
+                bottom: 25px;
+                right: 25px;
+                display: none;
+            }
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color:grey;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+            }
+            #myBtn:hover {
+                background-color: #555;
+            }
+            footer {
+                background-color: #F8F8F8;
+            }
+            h2 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="../images/icon_cloud.png" />
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">#VTECL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Accueil</a>
+                <a class="nav-item nav-link" href="1_intro.html">Introduction au Cloud Computing</a>
+                <a class="nav-item nav-link active" href="2_serverless.html">Serverless Computing</a>
+                <a class="nav-item nav-link" href="3_hybrid.html">Hybrid Cloud</a>
+                <a class="nav-item nav-link" href="4_edge.html">Edge Computing</a>
+                <a class="nav-item nav-link" href="5_gaming.html">Cloud Gaming</a>
+                </div>
+            </div>
+        </nav>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 style="font-weight: bold">Le Serverless Computing</h1>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 50%; padding-bottom: 30px;">
+
+            <p>&emsp;Le Serverless computing, ou informatique "sans serveur", est une méthode qui permet de fournir des services back-end en fonction de l'utilisation. Un fournisseur Serverless permet aux utilisateurs d'écrire et de déployer du code sans avoir à se soucier de l'infrastructure sous-jacente.</p>
+
+            <p><i>Petit rappel sur le back-end :</i> Le développement d'applications est généralement divisé en deux domaines : le front-end et le back-end. Le front-end est la partie de l'application que les utilisateurs voient et avec laquelle ils interagissent, telle que la présentation visuelle. Le back-end est la partie que l'utilisateur ne voit pas ; cela comprend le serveur où les fichiers de l'application sont stockés et la base de données où les données de l'utilisateur et la logique commerciale sont conservées.</p>
+
+            <div style="text-align: center; padding-top: 15px; padding-bottom: 15px">
+                <img src="../images/2_1.png" style="max-width: 100%"/>
+                <p><i>Schéma illustratif Front-End/Back-End [<a href="https://www.tonymarston.net/php-mysql/">tonymarston</a>]</i></p>
+            </div>
+
+            <p>Une entreprise qui obtient des services back-end d'un fournisseur Serverless est facturée sur la base de ses calculs et n'a pas à réserver et à payer une quantité fixe de bande passante ou de nombre de serveurs, car le service est automatiquement scalable. Il est à noter que bien qu'ils soient appelés "Serverless", les serveurs physiques sont toujours utilisés mais les développeurs n'ont pas besoin d'en être conscients.</p>
+
+            <h2>Historique et contexte</h2>
+
+            <p>Aux débuts du web, quiconque qui souhaitait construire une application web devait posséder le matériel physique nécessaire pour faire fonctionner un serveur, ce qui peut être très coûteux et lourd à gérer.</p>
+
+            <p>Puis est venu le Cloud computing, où des nombres fixes de serveurs ou des quantités d'espace serveur pouvaient être loués à distance. Les développeurs et les entreprises qui louent ces unités fixes d'espace serveur achètent généralement trop pour s'assurer qu'un pic de trafic ou d'activité ne dépassera pas leurs limites mensuelles et ne cassera pas leurs applications. Cela signifie qu'une grande partie de l'espace serveur payé est généralement gaspillé. Les fournisseurs de Cloud computing ont introduit des modèles de dimensionnement automatique pour résoudre ce problème, mais même avec le dimensionnement automatique, un pic d'activité non souhaité, comme une attaque DDoS, pouvait s'avérer très coûteux.</p>
+
+            <h2>Technologie FaaS</h2>
+
+            <p>En pratique, la plupart des fournisseurs Serverless (AWS, IBM, …) adoptent des technologies basées sur le FaaS.<br/>Le Function as a Service (FaaS) est un moyen d'exécuter des morceaux de code modulaires sur un cloud. FaaS permet aux développeurs d'écrire et de mettre à jour un morceau de code à la volée, qui peut ensuite être exécuté en réponse à un événement, tel qu'un utilisateur qui clique sur un élément d'une application web. Il est ainsi facile d'adapter le code et constitue un moyen économique de mettre en œuvre des micro-services.</p>
+
+            <div style="text-align: center; padding-top: 15px; padding-bottom: 15px">
+                <script src="https://cdn.jwplayer.com/players/TJpkj5cr-b8lwoB1q.js"></script>
+                <p><i>What is Serverless Computing ? - IDG.tv [<a href="https://www.networkworld.com/article/3187093/serverless-explainer-the-next-generation-of-cloud-infrastructure.html">NetworkWorld</a>]</i></p>
+            </div>
+
+            <p>Pour rappel, les micro-services désignent à la fois une architecture et une approche de développement logiciel qui consiste à décomposer les applications en éléments les plus simples, indépendants les uns des autres. Diviser une application en micro-services est attrayant pour les développeurs car cela signifie qu'ils peuvent créer et modifier de petits morceaux de code qui peuvent être facilement mis en œuvre dans leurs bases de code. Cela s'oppose à l'architecture monolithique, dans laquelle tout le code est imbriqué dans un grand système. Avec les grands systèmes monolithiques, même une modification mineure de l'application nécessite un processus de déploiement lourd. FaaS élimine cette complexité de déploiement.</p>
+
+            <p>En utilisant un code Serverless comme FaaS, les développeurs web peuvent se concentrer sur l'écriture du code de l'application, tandis que le fournisseur Serverless s'occupe de l'allocation des serveurs et des services de maintenance.</p>
+
+            <div style="text-align: center; padding-top: 15px; padding-bottom: 15px">
+                <img src="../images/2_2.png" style="max-width: 100%"/>
+                <p><i>Exemple de workflow d'une application Serverless avec AWS Lambda [<a href="https://aws.amazon.com/fr/serverless/">Amazon AWS</a>]</i></p>
+            </div>
+
+            <h2>Avantages</h2>
+
+            <p><b>Coûts réduits</b> - L'informatique Serverless est généralement très rentable, car les fournisseurs traditionnels de services de base (allocation de serveurs) font souvent payer à l'utilisateur l'espace inutilisé ou le temps d'inactivité du processeur.</p>
+
+            <p><b>Scalabilité simplifiée</b> - Les développeurs qui utilisent une architecture Serverless n'ont pas à se soucier d'adapter le code à la montée de charge. Le fournisseur Serverless gère toute l'évolution à la demande.</p>
+
+            <p><b>Code back-end simplifié</b> - Avec les FaaS, les développeurs peuvent créer des fonctions simples qui remplissent indépendamment un seul objectif, comme par exemple l'appel d'une API.</p>
+
+            <p><b>Délais d'exécution plus courts</b> - L'architecture Serverless peut réduire considérablement le temps de mise sur le marché. Au lieu d'avoir besoin d'un processus de déploiement compliqué pour mettre en place des corrections de bogues et de nouvelles fonctionnalités, les développeurs peuvent ajouter et modifier le code au coup par coup.</p>
+
+            <h2>Inconvénients</h2>
+
+            <p><b>Moins de contrôle du système</b> - La gestion d'une partie de l'infrastructure par une tierce partie rend difficile la compréhension de l'ensemble du système et ajoute des difficultés de débogage.</p>
+
+            <p><b>Plus de complexité requise pour les tests</b> - Il peut être très difficile d'intégrer le code FaaS dans un environnement de test local, ce qui rend les tests approfondis d'une application plus difficiles.</p>
+
+            <p><b>Formation des développeurs</b> - Pour pouvoir utiliser les infrastructures Serverless, il faut coder ses services back-end sous formes de FaaS, ce qui implique d’apprendre une nouvelle façon de développer pour s’adapter à la technologie.</p>
+
+            <p><b>Portabilité</b> - La gestion de l’infrastructure étant assurée par une tierce partie, changer de provider implique souvent de modifier le code de ses fonctions puisque les technologies FaaS diffèrent d’un provider à un autre.</p>
+
+            <p><b>Sécurité</b> - La gestion d'une partie de l'infrastructure par une tierce partie rend la sécurité de son application dépendante en grande partie de la sécurité garantie par le provider Serverless.</p>
+
+            <p>O’Reilly a réalisé une enquête sur l’adoption du Serverless en entreprise en 2019 sur 1500 employés d’entreprises. Certaines statistiques sont très pertinentes concernant le feedback des entreprises qui ont adopté la technologie Serverless.</p>
+
+            <div style="text-align: center; padding-top: 15px; padding-bottom: 15px">
+                <img src="../images/2_3.png" style="max-width: 100%"/>
+                <p><i>(Survey) Serverless benefits for organizations [<a href="https://www.oreilly.com/radar/oreilly-serverless-survey-2019-concerns-what-works-and-what-to-expect/">O'Reilly</a>]</i></p>
+            </div>
+
+            <div style="text-align: center; padding-top: 15px; padding-bottom: 15px">
+                <img src="../images/2_4.png" style="max-width: 100%"/>
+                <p><i>(Survey) Serveless challenges faced by organizations [<a href="https://www.oreilly.com/radar/oreilly-serverless-survey-2019-concerns-what-works-and-what-to-expect/">O'Reilly</a>]</i></p>
+            </div>
+
+            <h2>Sources & Actualités</h2>
+
+            <ul>
+                <li>
+                    <a href="https://www.zdnet.fr/actualites/cloud-computing-la-lourde-tendance-2020-le-serverless-progresse-39896487.htm">Cloud computing : la lourde tendance 2020, le "serverless" progresse</a>, ZDNet
+                </li>
+                <li>
+                    <a href="https://www.networkworld.com/article/3187093/serverless-explainer-the-next-generation-of-cloud-infrastructure.html">Serverless explainer: The next generation of cloud infrastructure</a>, NetworkWorld
+                </li>
+                <li>
+                    <a href="https://www.ibm.com/cloud/learn/faas">FaaS (Function-as-a-Service)</a>, IBM
+                </li>
+                <li>
+                    <a href="https://www.cloudflare.com/learning/serverless/what-is-serverless/">What is serverless computing?</a>, Cloudflare
+                </li>
+                <li>
+                    <a href="https://www.oreilly.com/radar/oreilly-serverless-survey-2019-concerns-what-works-and-what-to-expect/">O’Reilly serverless survey 2019: Concerns, what works, and what to expect</a>, O'Reilly
+                </li>
+            </ul>
+
+        </div>
+
+        <footer style="text-align: center;">
+            <p>réalisé avec <a href="https://getbootstrap.com/">Bootstrap</a> par Moncef EL KARMOUDI
+            <br/><a href="https://twitter.com/MosNtic">twitter</a> | <a href="https://github.com/melkarmo">github<a>
+            <br/><i>MOS 4.4 - NTIC 2019/2020 @CentraleLyon</i></p>
+        </footer>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+    </body>
+
+</html>

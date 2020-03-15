@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>#VTECL - Cloud Computing</title>
+        <meta name="description" content="Synthèse VTECL">
+        <meta name="author" content="melkarmo">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .masthead { 
+                height: 30vh; 
+                background-size: cover;
+                background-position: center; 
+                background-repeat: no-repeat; 
+            }
+            .back-to-top {
+                position: fixed;
+                bottom: 25px;
+                right: 25px;
+                display: none;
+            }
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color:grey;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+            }
+            #myBtn:hover {
+                background-color: #555;
+            }
+            footer {
+                background-color: #F8F8F8;
+            }
+            h2, h4 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="../images/icon_cloud.png" />
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">#VTECL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Accueil</a>
+                <a class="nav-item nav-link" href="1_intro.html">Introduction au Cloud Computing</a>
+                <a class="nav-item nav-link" href="2_serverless.html">Serverless Computing</a>
+                <a class="nav-item nav-link" href="3_hybrid.html">Hybrid Cloud</a>
+                <a class="nav-item nav-link" href="4_edge.html">Edge Computing</a>
+                <a class="nav-item nav-link active" href="5_gaming.html">Cloud Gaming</a>
+                </div>
+            </div>
+        </nav>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 style="font-weight: bold">Le Cloud Gaming</h1>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 50%; padding-bottom: 30px;">
+
+            <p>&emsp;Le cloud gaming, ou gaming-as-a-service, est un type de gaming en ligne qui exécute des jeux sur des serveurs distants et les diffuse directement sur l'appareil de l'utilisateur, ou plus familièrement, qui joue à un jeu à distance à partir d'un cloud.</p>
+
+            <p>Les trois principaux types de jeux en cloud sont les jeux en peer-to-peer, les jeux en streaming et le téléchargement progressif :</p>
+
+            <h2>Peer-2-Peer Gaming</h2>
+
+            <p>Le P2P Gaming est un type de cloud gaming où les appareils clients communiquent directement entre eux sans atteindre au préalable un serveur intermédiaire. Le jeu est exécuté sur un PC réel et il est diffusé en continu sur une base individuelle. Le jeu réel est stocké, exécuté et rendu sur le poste informatique distant et les résultats vidéo sont diffusés directement sur l'ordinateur d'un consommateur via Internet. Le P2P Gaming permet de combler le fossé de latence : l'ordinateur distant peut être situé chez un seul fournisseur d'accès à Internet. Le protocole réseau du P2P Gaming choisit la meilleure adéquation entre l'ordinateur distant et l'appareil du consommateur.</p>
+
+            <h2>Progressive downloading</h2>
+
+            <p>Le cloud gaming basé sur la diffusion de fichiers en continu, également connu sous le nom de Progressive Downloading, déploie un client léger dans lequel le jeu réel est exécuté sur l'appareil de l'utilisateur, tel qu'un appareil mobile, un PC ou une console. Une petite partie du jeu, généralement inférieure à 5 % de la taille totale du jeu, est téléchargée au départ afin que le joueur puisse commencer à jouer rapidement. Le reste du contenu du jeu est téléchargé sur l'appareil de l'utilisateur final pendant qu'il joue, ce qui permet d'accéder instantanément et sans délai aux jeux ne nécéssitant qu’une faible bande passante Internet.</p>
+
+            <p>Ce type de cloud gaming basé sur la diffusion de fichiers en continu nécessite un appareil qui possède les capacités matérielles nécessaires pour faire fonctionner le jeu. Souvent, le contenu de jeu téléchargé est stocké sur l'appareil de l'utilisateur final où il est mis en cache.</p>
+
+            <h2>Game streaming</h2>
+
+            <p>Le streaming de jeux est un type de jeu en ligne qui permet la diffusion directe et à la demande de jeux sur des ordinateurs, des consoles et des appareils mobiles, comme la vidéo à la demande, grâce à l'utilisation d'un client léger.</p>
+
+            <p>Le jeu proprement dit est stocké, exécuté et rendu sur le serveur de l'opérateur ou de la société de jeux à distance et les résultats vidéo sont diffusés en continu directement sur les ordinateurs d'un consommateur via l'internet. Cela permet d'accéder aux jeux sans avoir besoin d'une console ou d'ordinateurs de jeu haut de gamme et rend largement insignifiante la capacité de l'ordinateur de l'utilisateur, puisque le serveur est le système qui exécute les besoins de traitement. Les commandes et les pressions de bouton de l'utilisateur sont transmises directement au serveur, où elles sont enregistrées, et le serveur renvoie ensuite la réponse du jeu aux commandes d'entrée.</p>
+
+            <p>C’est ce dernier type de cloud gaming qui est le plus en vogue ces dernières années, et sur lequel repose les offres phares de cloud gaming actuelles : Google Stadia et Nvidia GeForce Now.</p>
+
+            <h2>Avantages</h2>
+
+            <p><b>Pas besoin d'investissements matériels coûteux ou de mises à niveau</b> - Avec le cloud gaming, vous n'auriez pas besoin de mettre à niveau votre PC ou votre console. Au lieu d'acheter un matériel de jeu coûteux, vous utiliserez simplement votre matériel existant. Vous pourriez également acheter une boîte de diffusion en continu et un contrôleur bon marché qui se branche sur votre télévision et votre réseau domestique.</p>
+
+            <p><b>Jouer à des jeux sur n'importe quel système d'exploitation ou appareil</b> - La majorité des jeux haut de gamme non mobiles sont actuellement restreints à des PC (souvent Windows) ou à des consoles. Les jeux en cloud permettraient aux jeux de devenir plus indépendants des plateformes, permettant aux PC et aux tablettes fonctionnant sous Mac, Linux, Android, iOS, Chrome OS, Windows RT et d'autres systèmes d'exploitation de jouer à des jeux qui, autrement, ne fonctionneraient que sous Windows.</p>
+
+            <p><b>Intégrer les jeux dans les téléviseurs et autres appareils</b> - Les fabricants de téléviseurs pourraient intégrer la prise en charge des services de jeux dans le cloud dans leurs téléviseurs intelligents. Le téléviseur n'aurait pas besoin de matériel de jeu puissant et coûteux - tout téléviseur doté du logiciel approprié et d'une manette pourrait fonctionner pour les jeux sans qu'il soit nécessaire d'installer des boîtiers supplémentaires.</p>
+
+            <p><b>Jeu instantané</b> - Certains jeux peuvent nécessiter un téléchargement de 10 Go, 20 Go, voire plus, avant de pouvoir y jouer. Le cloud gaming vous permet de commencer à jouer instantanément, car le serveur a déjà installé le jeu et peut commencer à y jouer immédiatement.</p>
+
+            <h2>Inconvénients</h2>
+
+            <p><b>Compression vidéo</b> - Tout comme les vidéos que nous regardons sur YouTube ou Netflix sont compressées pour qu'elles occupent moins de bande passante, la "vidéo" de jeu que vous recevez d'un service de cloud gaming est compressée. Elle n'est pas aussi précise et détaillée que ce que peut rendre un PC de jeu haut de gamme. Toutefois, la vidéo compressée que vous recevez peut être plus belle qu'un jeu rendu localement avec moins de détails.</p>
+
+            <p><b>Bande passante</b> - Les services de jeu en cloud nécessitent une grande quantité de bande passante. Jouer à un jeu peut utiliser plus de 3 Go de bande passante par heure. Si votre connexion Internet est limitée en bande passante, cela peut poser un sérieux problème. Si tout le monde jouait à des jeux en utilisant des services cloud, l'utilisation de la bande passante augmenterait considérablement.</p>
+
+            <p><b>Latence</b> - Il n'y a pas moyen de la contourner : les jeux peuvent réagir à vos actions beaucoup plus rapidement lorsqu'ils tournent sur votre ordinateur local. Le temps de réaction est plus rapide lorsque le mouvement de votre souris doit simplement atteindre votre ordinateur que lorsqu'il doit passer par une connexion Internet, être rendu et compressé, puis revenir vers vous. Les services de cloud gaming auront toujours plus de latence que le puissant matériel local.</p>
+
+            <h2>Sources & Actualités</h2>
+
+            <ul>
+                <li>
+                    <a href="https://medium.com/@eyevinntechnology/cloud-gaming-1e6de02f478a">Cloud Gaming</a>, Medium
+                </li>
+                <li>
+                    <a href="https://blog.parsecgaming.com/description-of-parsec-technology-b2738dcc3842">The Technology Behind A Low Latency Cloud Gaming Service</a>, Medium - PARSEC
+                </li>
+                <li>
+                    <a href="https://fr.wikipedia.org/wiki/Jeu_%C3%A0_la_demande">Jeu à la demande</a>, Wikipedia
+                </li>
+                <li>
+                    <a href="https://www.frandroid.com/marques/google/678530_google-stadia-pourquoi-les-developpeurs-de-jeux-boudent-la-plateforme">Google Stadia : pourquoi les développeurs de jeux boudent la plateforme</a>, Frandroid
+                </li>
+                <li>
+                    <a href="https://www.zdnet.fr/actualites/jeux-video-le-cloud-seul-ne-suffira-pas-au-modele-du-sans-console-39897089.htm">Jeux vidéo : le cloud seul ne suffira pas au modèle du « sans console »</a>, ZDNet
+                </li>
+            </ul>
+
+        </div>
+
+        <footer style="text-align: center;">
+            <p>réalisé avec <a href="https://getbootstrap.com/">Bootstrap</a> par Moncef EL KARMOUDI
+            <br/><a href="https://twitter.com/MosNtic">twitter</a> | <a href="https://github.com/melkarmo">github<a>
+            <br/><i>MOS 4.4 - NTIC 2019/2020 @CentraleLyon</i></p>
+        </footer>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+    </body>
+
+</html>

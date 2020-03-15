@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>#VTECL - Cloud Computing</title>
+        <meta name="description" content="Synthèse VTECL">
+        <meta name="author" content="melkarmo">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .masthead { 
+                height: 30vh; 
+                background-size: cover;
+                background-position: center; 
+                background-repeat: no-repeat; 
+            }
+            .back-to-top {
+                position: fixed;
+                bottom: 25px;
+                right: 25px;
+                display: none;
+            }
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color:grey;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+            }
+            #myBtn:hover {
+                background-color: #555;
+            }
+            footer {
+                background-color: #F8F8F8;
+            }
+            h2, h4 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="../images/icon_cloud.png" />
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">#VTECL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Accueil</a>
+                <a class="nav-item nav-link" href="1_intro.html">Introduction au Cloud Computing</a>
+                <a class="nav-item nav-link" href="2_serverless.html">Serverless Computing</a>
+                <a class="nav-item nav-link" href="3_hybrid.html">Hybrid Cloud</a>
+                <a class="nav-item nav-link active" href="4_edge.html">Edge Computing</a>
+                <a class="nav-item nav-link" href="5_gaming.html">Cloud Gaming</a>
+                </div>
+            </div>
+        </nav>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 style="font-weight: bold">Le Edge Computing</h1>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 50%; padding-bottom: 30px;">
+
+            <p>&emsp;Le Edge Computing rapproche le calcul et le stockage des données des appareils où elles sont recueillies, plutôt que de s'appuyer sur un lieu central qui peut se trouver à des milliers de kilomètres. Cela permet d'éviter que les données, en particulier les données en temps réel, ne souffrent de problèmes de latence qui peuvent affecter les performances d'une application. De plus, les entreprises peuvent économiser de l'argent en faisant effectuer le traitement localement, ce qui réduit la quantité de données à traiter dans un lieu centralisé ou dans le cloud.</p>
+
+            <p>L'informatique en périphérie a été développée en raison de la croissance exponentielle des dispositifs d’IoT, qui se connectent à Internet pour recevoir des informations du cloud ou renvoyer des données vers le cloud. Et de nombreux dispositifs IoT génèrent d'énormes quantités de données au cours de leurs opérations.</p>
+
+            <p>Par exemple, des dispositifs qui surveillent les équipements de fabrication dans une usine, ou à une caméra vidéo connectée à Internet qui envoie des images en direct depuis un bureau distant. Alors qu'un seul appareil produisant des données peut les transmettre assez facilement sur un réseau, des problèmes surgissent lorsque le nombre d'appareils transmettant des données en même temps augmente. Au lieu qu'une seule caméra vidéo transmette des images en direct, multipliez-les par des centaines ou des milliers d'appareils. Non seulement la qualité sera affectée par la latence, mais les coûts en bande passante peuvent être énormes.</p>
+
+            <p>Le matériel et les services informatiques en périphérie aident à résoudre ce problème en étant une source locale de traitement et de stockage pour beaucoup de ces systèmes. Une passerelle de périphérie (edge gateway), par exemple, peut traiter les données d'un objet connecté, puis renvoyer uniquement les données pertinentes par le cloud, ce qui réduit les besoins en bande passante. Elle peut également renvoyer des données à la périphérie en cas de besoins d'applications en temps réel.</p>
+
+            <p>Ces objets connectés en périphérie peuvent inclure de nombreux éléments tels qu'un capteur connecté, l'ordinateur portable d'un employé, son dernier smartphone, la caméra de sécurité ou même le four à micro-ondes connecté à Internet dans la salle de repos du bureau. Les passerelles de périphérie sont elles-mêmes considérées comme des dispositifs de périphérie au sein d'une infrastructure informatique de type Edge.</p>
+
+            <h2>Avantages du Edge Computing</h2>
+
+            <p><b>Élimination des temps de latence</b> - Les applications censées offrir des performances proches du temps réel ne peuvent pas attendre le retour d'une demande de traitement de données depuis le cloud avant d'agir. Ainsi, les données des capteurs des systèmes de contrôle et d'exploitation industriels critiques pour la sécurité sont traitées à l'aide de passerelles en périphérie (edge gateways) pour éliminer cette latence du réseau et obtenir un temps de réponse plus rapide.</p>
+
+            <p><b>Portabilité</b> - Les logiciels des solutions de périphérie sont généralement portables sur différentes plateformes matérielles. Cela permet d'éviter qu'ils soient liés au matériel ou au logiciel d'un fournisseur particulier.</p>
+
+            <p><b>Autonomie opérationnelle</b> - Le Edge Computing offre la possibilité de disposer d'un stockage local et d'un calcul local, rendant ainsi les solutions autonomes dans leurs opérations. Cela permet à l'appareil de continuer à fonctionner même s'il n'est pas connecté au réseau. Des algorithmes analytiques avancés ou des modèles d'apprentissage machine, qui peuvent apprendre à partir de données limitées, peuvent être déployés efficacement sur les passerelles de périphérie pour faciliter un calcul efficace sur des ensembles de données plus petits.</p>
+
+            <p><b>Sécurité</b> - Du contrôle d'accès basé sur des autorisations et des communications cryptées à la gestion des certificats et à l'intégration aisée avec les solutions existantes, l'informatique de périphérie typique améliore la sécurité et la confidentialité d'une application IoT. De plus, en gérant la quantité d'informations sensibles et privées transmises par un réseau et le nombre de capteurs et d'actionneurs connectés à l'internet, les attaques potentielles contre la sécurité sont minimisées.</p>
+            
+            <h2>Sources & Actualités</h2>
+
+            <ul>
+                <li>
+                    <a href="https://www.gartner.com/smarterwithgartner/what-edge-computing-means-for-infrastructure-and-operations-leaders/">What Edge Computing Means for Infrastructure and Operations Leaders</a>, Gartner
+                </li>
+                <li>
+                    <a href="https://www.ictjournal.ch/articles/2020-02-06/edge-computing-traiter-la-data-a-la-source">Edge computing: traiter la data à la source</a>, ICTjournal
+                </li>
+                <li>
+                    <a href="https://www.networkworld.com/article/3224893/what-is-edge-computing-and-how-it-s-changing-the-network.html">What is edge computing and why it matters</a>, NetworkWorld
+                </li>
+                <li>
+                    <a href="https://www.usine-digitale.fr/article/google-cloud-s-allie-a-at-t-pour-developper-l-edge-computing-dans-le-cadre-de-la-5g.N937444">Google Cloud s'allie à AT&T pour développer l'edge computing dans le cadre de la 5G</a>, L'Usine Digitale
+                </li>
+                <li>
+                    <a href="https://www.theverge.com/circuitbreaker/2018/5/7/17327584/edge-computing-cloud-google-microsoft-apple-amazon">What is edge computing?</a>, The Verge
+                </li>
+            </ul>
+
+        </div>
+
+        <footer style="text-align: center;">
+            <p>réalisé avec <a href="https://getbootstrap.com/">Bootstrap</a> par Moncef EL KARMOUDI
+            <br/><a href="https://twitter.com/MosNtic">twitter</a> | <a href="https://github.com/melkarmo">github<a>
+            <br/><i>MOS 4.4 - NTIC 2019/2020 @CentraleLyon</i></p>
+        </footer>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+    </body>
+
+</html>

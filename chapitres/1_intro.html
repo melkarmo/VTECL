@@ -1,0 +1,159 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>#VTECL - Cloud Computing</title>
+        <meta name="description" content="Synthèse VTECL">
+        <meta name="author" content="melkarmo">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .masthead { 
+                height: 30vh; 
+                background-size: cover;
+                background-position: center; 
+                background-repeat: no-repeat; 
+            }
+            .back-to-top {
+                position: fixed;
+                bottom: 25px;
+                right: 25px;
+                display: none;
+            }
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color:grey;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+            }
+            #myBtn:hover {
+                background-color: #555;
+            }
+            footer {
+                background-color: #F8F8F8;
+            }
+            h2, h4 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="../images/icon_cloud.png" />
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">#VTECL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Accueil</a>
+                <a class="nav-item nav-link active" href="1_intro.html">Introduction au Cloud Computing</a>
+                <a class="nav-item nav-link" href="2_serverless.html">Serverless Computing</a>
+                <a class="nav-item nav-link" href="3_hybrid.html">Hybrid Cloud</a>
+                <a class="nav-item nav-link" href="4_edge.html">Edge Computing</a>
+                <a class="nav-item nav-link" href="5_gaming.html">Cloud Gaming</a>
+                </div>
+            </div>
+        </nav>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 style="font-weight: bold">Introduction au Cloud Computing</h1>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 50%; padding-bottom: 30px;">
+
+            <p>&emsp;Le cloud computing est la disponibilité à la demande des ressources d'un système informatique, en particulier le stockage des données et la puissance de calcul, sans gestion active directe par l'utilisateur.</p>
+
+            <p>Plutôt que de posséder leur propre infrastructure informatique ou leurs propres centres de données, les entreprises peuvent louer l'accès à n'importe quoi, des applications au stockage, auprès d'un fournisseur de services en nuage.</p>
+
+            <p>L'un des avantages des services de cloud computing est que les entreprises peuvent éviter les coûts initiaux et la complexité de la possession et de la maintenance de leur propre infrastructure informatique, et payer simplement ce qu'elles utilisent, quand elles l'utilisent.</p>
+
+            <p>En retour, les fournisseurs de services de cloud computing peuvent bénéficier d'importantes économies d'échelle en offrant les mêmes services à un large éventail de clients.</p>
+
+            <h2>Les principaux types de services Cloud</h2>
+
+            <h4>Software as a Service (SaaS)</h4>
+
+            <p>Les services d'application dans le cloud, ou Software as a Service (SaaS), représentent le plus grand marché du cloud et continuent de croître rapidement. Le SaaS utilise le web pour fournir des applications gérées par un fournisseur tiers et dont l'interface est accessible du côté des clients. La plupart des applications SaaS peuvent être exécutées directement à partir d'un navigateur web sans aucun téléchargement ni installation.</p>
+
+            <p>Grâce au modèle de livraison par le web, le SaaS élimine la nécessité d'installer et d'exécuter des applications sur des ordinateurs individuels. Avec le SaaS, il est facile pour les entreprises de maintenir leurs applications, car tout peut être géré par les fournisseurs : applications, temps d'exécution, données, intergiciels, systèmes d'exploitation, virtualisation, serveurs, stockage et réseau.</p>
+
+            <h4>Platform as a Service (PaaS)</h4>
+
+            <p>Les services de plate-forme en cloud, ou Platform as a Service (PaaS), sont utilisés pour des applications et d'autres développements, tout en fournissant des composants en cloud aux logiciels. Ce que les développeurs gagnent avec le PaaS, c'est un cadre sur lequel ils peuvent s'appuyer pour développer ou personnaliser des applications. Le PaaS rend le développement, les tests et le déploiement d'applications rapides, simples et rentables. Grâce à cette technologie, les entreprises ou un fournisseur tiers peuvent gérer les systèmes d'exploitation, la virtualisation, les serveurs, le stockage, la mise en réseau et le logiciel PaaS lui-même. Les développeurs, quant à eux, gèrent les applications.</p>
+
+            <p>Le PaaS d'entreprise fournit aux développeurs de logiciels professionnels un portail en libre-service pour gérer l'infrastructure informatique à partir des opérations informatiques centralisées et des plates-formes installées sur le matériel. Le PaaS d'entreprise peut être fourni selon un modèle hybride qui utilise à la fois l'IaaS public et l'infrastructure sur site ou comme un PaaS purement privé qui utilise uniquement cette dernière.</p>
+
+            <h4>Infrastructure as a Service (IaaS)</h4>
+
+            <p>Les services d'infrastructure en cloud, appelés Infrastructure as a Service (IaaS), sont des modèles de libre-service pour l'accès, la surveillance et la gestion des infrastructures de centres de données distants, tels que les services de calcul (virtualisés ou bare metal), de stockage, de mise en réseau et de réseautage (par exemple, les pare-feu). Au lieu de devoir acheter du matériel informatique, les utilisateurs peuvent acheter des IaaS en fonction de leur consommation, comme pour la facturation de l'électricité ou d'autres services publics.</p>
+
+            <p>Par rapport au SaaS et au PaaS, les utilisateurs d'IaaS sont responsables de la gestion des applications, des données, du temps d'exécution, des logiciels intermédiaires et des systèmes d'exploitation. Les fournisseurs continuent de gérer la virtualisation, les serveurs, les disques durs, le stockage et la mise en réseau. De nombreux fournisseurs IaaS proposent désormais des bases de données, des files d'attente de messagerie et d'autres services au-dessus de la couche de virtualisation. Ce que les utilisateurs gagnent avec l'IaaS, c'est une infrastructure sur laquelle ils peuvent installer toute plateforme nécessaire. Les utilisateurs sont responsables de la mise à jour de celles-ci si de nouvelles versions sont publiées.</p>
+
+            <p style="padding-top: 15px;">Voici un schéma récapitulatif des différences entre les 3 types de services Cloud :</p>
+
+            <div style="text-align: center; padding-top: 15px; padding-bottom: 15px">
+                <img src="../images/1_1.jpg" style="max-width: 100%"/>
+                <p><i>On-premise, IaaS, PaaS & SaaS [<a href="https://www.delphisoft.fr/solutions/solutions-cloud/iaas-paas-saas-comparison-1024x759-fr">delphisoft</a>]</i></p>
+            </div>
+
+            <p>Je vous invite à regarder cette vidéo Youtube réalisée par la chaîne <b>Cookie connecté</b> qui explique le cloud computing avec des visuels très parlants.</p>
+
+            <div style="text-align: center; padding-top: 15px; padding-bottom: 15px">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/RwbIMBSr8o8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <p><i>Le cloud computing expliqué en 7 minutes [<a href="https://www.youtube.com/channel/UC5cs06DgLFeyLIF_II7lWCQ">Cookie Connecté</a>]</i></p>
+            </div>
+
+        </div>
+
+        <footer style="text-align: center;">
+            <p>réalisé avec <a href="https://getbootstrap.com/">Bootstrap</a> par Moncef EL KARMOUDI
+            <br/><a href="https://twitter.com/MosNtic">twitter</a> | <a href="https://github.com/melkarmo">github<a>
+            <br/><i>MOS 4.4 - NTIC 2019/2020 @CentraleLyon</i></p>
+        </footer>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+    </body>
+
+</html>

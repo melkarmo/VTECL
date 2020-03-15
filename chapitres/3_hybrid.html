@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8">
+        <title>#VTECL - Cloud Computing</title>
+        <meta name="description" content="Synthèse VTECL">
+        <meta name="author" content="melkarmo">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+        <style>
+            .masthead { 
+                height: 30vh; 
+                background-size: cover;
+                background-position: center; 
+                background-repeat: no-repeat; 
+            }
+            .back-to-top {
+                position: fixed;
+                bottom: 25px;
+                right: 25px;
+                display: none;
+            }
+            #myBtn {
+                display: none;
+                position: fixed;
+                bottom: 20px;
+                right: 30px;
+                z-index: 99;
+                font-size: 18px;
+                border: none;
+                outline: none;
+                background-color:grey;
+                color: white;
+                cursor: pointer;
+                padding: 15px;
+                border-radius: 4px;
+            }
+            #myBtn:hover {
+                background-color: #555;
+            }
+            footer {
+                background-color: #F8F8F8;
+            }
+            h2, h4 {
+                padding-top: 15px;
+                padding-bottom: 15px;
+            }
+        </style>
+        <link rel="icon" type="image/png" href="../images/icon_cloud.png" />
+    </head>
+
+    <body>
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand">#VTECL</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                <a class="nav-item nav-link" href="../index.html">Accueil</a>
+                <a class="nav-item nav-link" href="1_intro.html">Introduction au Cloud Computing</a>
+                <a class="nav-item nav-link" href="2_serverless.html">Serverless Computing</a>
+                <a class="nav-item nav-link active" href="3_hybrid.html">Hybrid Cloud</a>
+                <a class="nav-item nav-link" href="4_edge.html">Edge Computing</a>
+                <a class="nav-item nav-link" href="5_gaming.html">Cloud Gaming</a>
+                </div>
+            </div>
+        </nav>
+
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
+        <div class="masthead">
+            <div class="container h-100">
+                <div class="row h-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 style="font-weight: bold">Le Cloud Hybride</h1>
+                </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container" style="max-width: 50%; padding-bottom: 30px;">
+
+            <p>&emsp;Le cloud hybride est un environnement informatique qui relie les services cloud privés sur site d'une entreprise et le cloud public d'une tierce partie en une seule infrastructure flexible pour l'exécution des applications et des charges de travail de l'organisation.</p>
+
+            <p>Le principe du cloud hybride est que sa combinaison de ressources de cloud public et privé - avec un niveau d'orchestration entre elles - donne à une organisation la possibilité de choisir le cloud optimal pour chaque application ou charge de travail (et de déplacer librement les charges de travail entre les deux clouds en fonction de l'évolution des circonstances). Cela permet à l'organisation d'atteindre ses objectifs techniques et commerciaux de manière plus efficace et plus rentable qu'avec un cloud public ou privé seul.</p>
+
+            <p>Les avantages du cloud hybride sont plus faciles à comprendre une fois que l'on en sait plus sur les capacités, les limites et les utilisations des clouds privés et publics :</p>
+
+            <h2>Le Cloud privé</h2>
+
+            <p>Dans le modèle du cloud privé, l'infrastructure et les ressources du cloud sont déployées sur place et sont détenues et gérées par l'organisation.</p>
+
+            <p>Le cloud privé nécessite un investissement initial important pour l'équipement et les logiciels, un long déploiement et une expertise informatique interne pour gérer et maintenir l'infrastructure. Il est également coûteux et long d'augmenter la capacité (parce que vous devez acheter, fournir et déployer du nouveau matériel) et d'ajouter des capacités (parce que vous devez acheter et installer de nouveaux logiciels). Mais le cloud privé permet un contrôle maximal de l'environnement informatique et des données, ce qui est particulièrement important, voire obligatoire, si votre entreprise traite des données très sensibles ou est soumise à des réglementations industrielles ou gouvernementales strictes.</p>
+
+            <h2>Le Cloud public</h2>
+
+            <p>Dans le modèle du cloud public, une entreprise consomme des ressources de calcul, de réseau, de stockage et d'application sous forme de services fournis par un fournisseur cloud sur Internet.</p>
+
+            <p>Le fournisseur cloud possède, gère, fournit et entretient l'infrastructure et la loue essentiellement à des clients, soit par le biais d'un abonnement périodique, soit par des frais basés sur l'utilisation.</p>
+
+            <p>Le cloud public permet de réaliser des économies importantes car le fournisseur prend en charge tous les frais d'investissement, d'exploitation et de maintenance. Il rend l'évolutivité aussi facile que de demander plus de capacité, et il permet au personnel informatique de l'entreprise de se concentrer davantage sur les activités génératrices de revenus et sur l'innovation, et moins sur le fait de "garder la lumière allumée".</p>
+
+            <p>Dans les environnements du cloud public, vos charges de travail sont soumises aux performances, à la conformité et à la sécurité de l'infrastructure du fournisseur de cloud, ce qui n'est pas toujours souhaité lorsque des données sensibles sont manipulées.</p>
+
+            <h2>Et le Cloud Hybride dans tout ça ?</h2>
+
+            <p>Le modèle de cloud hybride représente le meilleur des deux mondes. Vous pouvez exécuter des applications et des charges de travail sensibles, hautement réglementées et critiques ou des charges de travail avec des exigences de performance et de capacité raisonnablement constantes sur une infrastructure de cloud privé. Vous pouvez exécuter des charges de travail moins sensibles, plus dynamiques ou même temporaires (comme des environnements de développement et de test pour une nouvelle application) sur le cloud public.</p>
+
+            <p>Avec une intégration et une orchestration appropriées entre les deux, vous pouvez tirer parti des deux pour la même charge de travail. Par exemple, vous pouvez tirer parti de la capacité supplémentaire du cloud public pour faire face à un pic de la demande d'une application de cloud privé ("éclatement du cloud").</p>
+
+            <h2>Technologies et mise en place</h2>
+
+            <p>La façon dont les clouds publics et les clouds privés fonctionnent en tant que partie d'un cloud hybride n'est pas différente de la façon dont les clouds publics ou privés autonomes fonctionnent :</p>
+
+            <ul>
+                <li>Un réseau local (LAN), un réseau étendu (WAN), un réseau privé virtuel (VPN) et/ou des interfaces de programmation d'applications (API) relient plusieurs ordinateurs entre eux.</li>
+                <li>La virtualisation, les conteneurs ou les ressources abstraites de stockage définies par logiciel, qui peuvent être mises en commun dans des data lakes.</li>
+                <li>Les logiciels de gestion répartissent ces ressources dans des environnements où les applications peuvent s'exécuter, qui sont ensuite fournies à la demande avec l'aide d'un service d'authentification.</li>
+            </ul>
+
+            <p>Les clouds séparés deviennent hybrides lorsque ces environnements sont connectés de la manière la plus transparente possible. Cette interconnectivité est le seul moyen pour que les clouds hybrides fonctionnent. Cette interconnectivité est la façon dont les charges de travail sont déplacées, la gestion est unifiée et les processus sont orchestrés. Le degré de perfectionnement de ces connexions a un impact direct sur le fonctionnement du cloud hybride.</p>
+
+            <p>En pratique, il y a deux méthodes de mise en place d'un environnement cloud hybride :</p>
+
+            <h4>Méthode “à la main”</h4>
+
+            <p>Les clouds hybrides sont le résultat de la connexion d'un cloud privé à un cloud public. Vous pouvez construire ce cloud privé par vous-même. Vous auriez également besoin d'un cloud public (AWS, Google, ...)</p>
+
+            <p>Enfin, il faudrait relier le cloud public au cloud privé. Cela se fait généralement au moyen d'un réseau complexe de LAN, de WPN, d'API et de VPN. De nombreux fournisseurs de services cloud offrent même à leurs clients un VPN préconfiguré dans le cadre de leurs forfaits d'abonnement.</p>
+
+            <h4>Méthode avancée</h4>
+
+            <p>Les clouds hybrides d'aujourd'hui ne nécessitent plus un vaste réseau d'API pour déplacer les charges de travail d'un cloud à l'autre. Les équipes informatiques modernes construisent des clouds hybrides en utilisant le même système d'exploitation dans chaque environnement informatique, en développant et en déployant des applications sous forme de collections de petits services indépendants et faiblement couplés, et en gérant le tout via une plateforme unifiée. En termes plus pratiques, un cloud hybride peut être le résultat de :</p>
+
+            <ul>
+                <li>Installation de Linux partout</li>
+                <li>Création et déploiement d'applications cloud-natives</li>
+                <li>Tout gérer à l'aide d'un moteur d'orchestration comme Kubernetes</li>
+            </ul>
+            
+            <p>L'utilisation d'un même système d'exploitation permet d'abstraire toutes les exigences matérielles, tandis que la plate-forme d'orchestration permet d'abstraire toutes les exigences applicatives. Cela crée un environnement informatique interconnecté et cohérent où les applications peuvent être déplacées d'un environnement à l'autre sans avoir à maintenir une carte complexe d'API qui se casse à chaque fois que les applications sont mises à jour ou que vous changez de fournisseur cloud.</p>
+
+        <h2>Sources & Actualités</h2>
+
+        <ul>
+            <li>
+                <a href="https://www.zdnet.fr/actualites/qu-est-ce-que-le-cloud-hybride-pourquoi-est-il-important-39809121.htm">Qu'est-ce que le cloud hybride ? Pourquoi est-il important ?</a>, ZDNet
+            </li>
+            <li>
+                <a href="https://www.lebigdata.fr/cloud-hybride-tout-savoir">Cloud hybride : qu’est-ce que c’est et à quoi ça sert</a>, LeBigData
+            </li>
+            <li>
+                <a href="https://www.ibm.com/cloud/learn/hybrid-cloud">Hybrid Cloud</a>, IBM
+            </li>
+            <li>
+                <a href="https://www.netapp.com/us/info/what-is-hybrid-cloud.aspx">What Is Hybrid Cloud?</a>, NetApp
+            </li>
+            <li>
+                <a href="https://data-economy.com/hybrid-cloud-adoption-trends-boost-switch-revenues-up-by-14-in-2019-to-462m/">Hybrid cloud adoption trends boost Switch revenues up by 14% in 2019 to $462m</a>, DataEconomy
+            </li>
+            <li>
+                <a href="https://www.zdnet.fr/actualites/coca-cola-en-pleine-effervescence-grace-au-cloud-hybride-39809191.htm">Coca-Cola en pleine effervescence grâce au cloud hybride</a>, ZDNet
+            </li>
+        </ul>
+
+        </div>
+
+        <footer style="text-align: center;">
+            <p>réalisé avec <a href="https://getbootstrap.com/">Bootstrap</a> par Moncef EL KARMOUDI
+            <br/><a href="https://twitter.com/MosNtic">twitter</a> | <a href="https://github.com/melkarmo">github<a>
+            <br/><i>MOS 4.4 - NTIC 2019/2020 @CentraleLyon</i></p>
+        </footer>
+
+        <script>
+            //Get the button
+            var mybutton = document.getElementById("myBtn");
+            
+            // When the user scrolls down 20px from the top of the document, show the button
+            window.onscroll = function() {scrollFunction()};
+            
+            function scrollFunction() {
+              if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+                mybutton.style.display = "block";
+              } else {
+                mybutton.style.display = "none";
+              }
+            }
+            
+            // When the user clicks on the button, scroll to the top of the document
+            function topFunction() {
+              document.body.scrollTop = 0;
+              document.documentElement.scrollTop = 0;
+            }
+        </script>
+
+    </body>
+
+</html>
